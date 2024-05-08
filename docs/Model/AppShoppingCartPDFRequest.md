@@ -1,0 +1,17 @@
+# # AppShoppingCartPDFRequest
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**shopOrderId** | **string** | The order number in the shop. All characters are allowed except &lt; and &amp;. It is optional in case of query parameter finalize is true. In all other cases it is mandatory required. | [optional]
+**ppl** | **int** | The PPL (Product Price List) to which the products in the shopping cart refer. | [optional]
+**total** | **int** | Total value of the shopping cart in euro cents. | [optional]
+**createManifest** | **bool** | The flag indicating whether a posting receipt should be created. | [optional]
+**createShippingList** | **string** | Enum that determines whether a mailing list should be created and if so, whether with or without addresses. | [optional]
+**dpi** | **string** |  | [optional]
+**pageFormatId** | **int** | The ID of the print format. | [optional]
+**positions** | [**\OpenAPI\Client\Internetmarke\Model\AppShoppingCartPDFPosition[]**](AppShoppingCartPDFPosition.md) | List of PDF order items. At least one item has to be specified. |
+**type** | **string** |  |
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
