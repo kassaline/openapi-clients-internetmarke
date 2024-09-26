@@ -4,9 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userToken** | **string** | The access token / bearer token | [optional]
+**accessToken** | **string** | The access token / bearer token | [optional]
 **walletBalance** | **int** | money balance in portokasse | [optional]
-**showTermsAndConditions** | **bool** | TaC | [optional]
 **infoMessage** | **string** | info message, if any | [optional]
 **tokenType** | **string** | Will always contain &#39;BearerToken&#39; | [optional]
 **expiresIn** | **int** | remaining token validity in seconds | [optional]

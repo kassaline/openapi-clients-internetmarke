@@ -9,7 +9,7 @@ All URIs are relative to https://api-eu.dhl.com/post/de/shipping/im/v1, except i
 | [**checkoutShoppingCartPNGApp()**](AppResourceApi.md#checkoutShoppingCartPNGApp) | **POST** /app/shoppingcart/png | Checkouts ot the PNG shopping cart. |
 | [**initShoppingCartApp()**](AppResourceApi.md#initShoppingCartApp) | **POST** /app/shoppingcart | Initializes a shopping cart and returns the shopOrderId. |
 | [**retoureVouchersApp()**](AppResourceApi.md#retoureVouchersApp) | **POST** /app/retoure | Retoure vouchers For App. |
-| [**retrieveGalleryApp()**](AppResourceApi.md#retrieveGalleryApp) | **GET** /app/gallery | Retrieve galleries. |
+| [**retrieveCatalogApp()**](AppResourceApi.md#retrieveCatalogApp) | **GET** /app/catalog | Retrieve catalogs. |
 | [**retrieveRetoureStateApp()**](AppResourceApi.md#retrieveRetoureStateApp) | **GET** /app/retoure | Retrieve retoure state for App. |
 | [**retrieveShoppingCartApp()**](AppResourceApi.md#retrieveShoppingCartApp) | **GET** /app/shoppingcart/{shopOrderId} | Retrieves a shopping cart. |
 
@@ -75,7 +75,7 @@ try {
 ## `checkoutShoppingCartPDFApp()`
 
 ```php
-checkoutShoppingCartPDFApp($checkoutShoppingCartPDFAppRequest, $validate, $finalize): object
+checkoutShoppingCartPDFApp($checkoutShoppingCartPDFAppRequest, $validate, $finalize): \OpenAPI\Client\Internetmarke\Model\CheckoutShoppingCartAppResponse
 ```
 
 Checkouts ot the PDF shopping cart.
@@ -119,7 +119,7 @@ try {
 
 ### Return type
 
-**object**
+[**\OpenAPI\Client\Internetmarke\Model\CheckoutShoppingCartAppResponse**](../Model/CheckoutShoppingCartAppResponse.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ try {
 ## `checkoutShoppingCartPNGApp()`
 
 ```php
-checkoutShoppingCartPNGApp($checkoutShoppingCartPNGAppRequest, $validate, $finalize): object
+checkoutShoppingCartPNGApp($checkoutShoppingCartPNGAppRequest, $validate, $finalize): \OpenAPI\Client\Internetmarke\Model\CheckoutShoppingCartAppResponse
 ```
 
 Checkouts ot the PNG shopping cart.
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-**object**
+[**\OpenAPI\Client\Internetmarke\Model\CheckoutShoppingCartAppResponse**](../Model/CheckoutShoppingCartAppResponse.md)
 
 ### Authorization
 
@@ -309,13 +309,13 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `retrieveGalleryApp()`
+## `retrieveCatalogApp()`
 
 ```php
-retrieveGalleryApp($types): \OpenAPI\Client\Internetmarke\Model\RetrieveGalleryResponse
+retrieveCatalogApp($types): \OpenAPI\Client\Internetmarke\Model\RetrieveCatalogResponse
 ```
 
-Retrieve galleries.
+Retrieve catalogs.
 
 ### Example
 
@@ -334,13 +334,13 @@ $apiInstance = new OpenAPI\Client\Internetmarke\Api\AppResourceApi(
     new GuzzleHttp\Client(),
     $config
 );
-$types = array('types_example'); // string[] | The type of the required gallery, can be specified as single or multiple. Only specified types will be returned.
+$types = array('types_example'); // string[] | The type of the required catalog, can be specified as single or multiple. Only specified types will be returned.
 
 try {
-    $result = $apiInstance->retrieveGalleryApp($types);
+    $result = $apiInstance->retrieveCatalogApp($types);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AppResourceApi->retrieveGalleryApp: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AppResourceApi->retrieveCatalogApp: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -348,11 +348,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **types** | [**string[]**](../Model/string.md)| The type of the required gallery, can be specified as single or multiple. Only specified types will be returned. | |
+| **types** | [**string[]**](../Model/string.md)| The type of the required catalog, can be specified as single or multiple. Only specified types will be returned. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Internetmarke\Model\RetrieveGalleryResponse**](../Model/RetrieveGalleryResponse.md)
+[**\OpenAPI\Client\Internetmarke\Model\RetrieveCatalogResponse**](../Model/RetrieveCatalogResponse.md)
 
 ### Authorization
 

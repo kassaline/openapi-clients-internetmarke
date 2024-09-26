@@ -5,7 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **shopOrderId** | **string** | The order number in the shop. All characters are allowed except &lt; and &amp;. It is optional in case of query parameter finalize is true. In all other cases it is mandatory required. | [optional]
-**ppl** | **int** | The PPL (Product Price List) to which the products in the shopping cart refer. | [optional]
 **total** | **int** | Total value of the shopping cart in euro cents. | [optional]
 **createManifest** | **bool** | The flag indicating whether a posting receipt should be created. | [optional]
 **createShippingList** | **string** | Enum that determines whether a mailing list should be created and if so, whether with or without addresses. | [optional]
